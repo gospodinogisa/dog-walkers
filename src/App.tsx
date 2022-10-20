@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import routes from './config/routes';
+import { Fragment, useEffect } from 'react';
+import PrivateRoute from './SharedComponents/PrivateRoute';
+import { useTranslation } from 'react-i18next';
+import { t } from 'i18next';
 
 function App() {
+  useTranslation()
+useEffect(() => {
+  console.log(t("Username"))
+})
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Router>
+        <Routes>
+          {
+            routes.map((route) => {
+              return (
+                <Route key={route.index} path={route.path} element={<PrivateRoute route={route} />} />
+              );
+            })
+          }
+        </Routes>
+      </Router>
+    </Fragment>
   );
 }
 
