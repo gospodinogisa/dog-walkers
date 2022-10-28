@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react"
 import IPage from "../../interfaces/page"
-import LoginForm from "./Components/LoginForm"
+import LoginForm from "./Components/LoginForm/LoginForm"
 
 
 const LoginPage: FunctionComponent<IPage> = (props: IPage) => {

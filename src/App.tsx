@@ -4,13 +4,10 @@ import routes from './config/routes';
 import { Fragment, useEffect } from 'react';
 import PrivateRoute from './SharedComponents/PrivateRoute';
 import { useTranslation } from 'react-i18next';
-import { t } from 'i18next';
 
 function App() {
   useTranslation()
-useEffect(() => {
-  console.log(t("Username"))
-})
+
   return (
     <Fragment>
       <Router>
