@@ -1,0 +1,11 @@
+{
+    "common":{
+        "Username": "Username",
+        "Password": "Password",
+        "Sign in": "Sign in",
+        "or": "or",
+        "Not a member?": "Not a member?",
+        "Become one": "Become one",
+        "Sign up": "Sign up"
+    }
+}

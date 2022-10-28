@@ -1,0 +1,17 @@
+.input {
+    width: 80%;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid;
+    line-height: 24px;
+    height: 50px;
+    font-size: 14px;
+    outline: none;
+    margin: 5px;
+}
+
+.label {
+    font-size: 12px;
+    color: #808080;
+    font-weight: 500;
+}
