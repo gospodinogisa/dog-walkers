@@ -1,0 +1,5 @@
+{
+    "user_create_success": "user created",
+    "login_success": "you're logged in",
+    "email_exists": "email already exists"
+}
