@@ -9,5 +9,7 @@ module.exports = db.define("User", {
         primaryKey: true,
     } ,
     username: Sequelize.STRING(50),
-    password: Sequelize.STRING(300)
+    email: Sequelize.STRING(300),
+    password: Sequelize.STRING(300),
+    token: Sequelize.STRING
 })
