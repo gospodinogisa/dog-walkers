@@ -3,7 +3,7 @@ const router = express.Router()
 const {register, login} = require("../../controllers/userController")
 
 
-router.get("/users", (req, res) => {
+router.get("/account", (req, res) => {
     res.send({data: "useri"})
 })
 

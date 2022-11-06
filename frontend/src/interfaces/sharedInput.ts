@@ -3,4 +3,5 @@ export default interface ISharedInput{
     name: string;
     type: string;
     placeholder: string;
+    onChange: Function;
 }
